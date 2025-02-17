@@ -7,14 +7,14 @@ const {
   PAN_ROUTER_UINVERSAL_OLD,
 } = require('../constant/erc20');
 const { FrontDetail, Token } = require('../models');
-const ethers = require('ethers');
+const { ethers } = require('ethers');
 const chalk = require('chalk');
 const Web3 = require('web3');
 const app = require('../app.js');
 const UniswapV3RouterABI = require('../constant/uniswapV3RouterABI.json');
 const WETHABI = require('../constant/Weth.json');
 
-const { Interface } = require('ethers/lib/utils');
+const { Interface } = require('ethers');
 
 var buy_method = [];
 buy_method[0] = '0x7ff36ab5'; //swapExactETHForTokens
